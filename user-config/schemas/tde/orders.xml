@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<template xmlns="http://marklogic.com/xdmp/tde">
+  <context>//instance</context>
+   <collections>
+     <collection>Orders</collection>
+   </collections>
+   <rows>
+     <row>
+       <schema-name>forrester_demo</schema-name>
+       <view-name>orders</view-name>
+       <columns>
+         <column>
+           <name>row_id</name>
+           <scalar-type>long</scalar-type>
+           <val>Row_ID</val>
+         </column>
+         <column>
+           <name>order_id</name>
+           <scalar-type>string</scalar-type>
+           <val>Order_ID</val>
+        </column>
+        <column>
+          <name>order_date</name>
+          <scalar-type>date</scalar-type>
+          <val>
+            xs:date(
+              fn:concat(
+                fn:tokenize(Order_Date, "/")[3],
+                "-",
+                if ( fn:string-length(fn:tokenize(Order_Date, "/")[1]) eq 1 ) then
+                  fn:concat("0", fn:tokenize(Order_Date, "/")[1])
+                else
+                  fn:tokenize(Order_Date, "/")[1],
+                "-",
+                if ( fn:string-length(fn:tokenize(Order_Date, "/")[2]) eq 1 ) then
+                  fn:concat("0", fn:tokenize(Order_Date, "/")[2])
+                else
+                  fn:tokenize(Order_Date, "/")[2]
+              )
+            )
+          </val>
+        </column>
+        <column>
+          <name>ship_date</name>
+          <scalar-type>date</scalar-type>
+          <val>
+            xs:date(
+              fn:concat(
+                fn:tokenize(Ship_Date, "/")[3],
+                "-",
+                if ( fn:string-length(fn:tokenize(Ship_Date, "/")[1]) eq 1 ) then
+                  fn:concat("0", fn:tokenize(Ship_Date, "/")[1])
+                else
+                  fn:tokenize(Ship_Date, "/")[1] ,
+                "-",
+                if ( fn:string-length(fn:tokenize(Ship_Date, "/")[2]) eq 1 ) then
+                  fn:concat("0", fn:tokenize(Ship_Date, "/")[2])
+                else
+                  fn:tokenize(Ship_Date, "/")[2]
+                )
+              )
+          </val>
+        </column>
+
+        <column>
+          <name>ship_mode</name>
+          <scalar-type>string</scalar-type>
+          <val>Ship_Mode</val>
+        </column>
+        <column>
+          <name>customer_id</name>
+          <scalar-type>string</scalar-type>
+          <val>Customer_ID</val>
+        </column>
+        <column>
+          <name>customer_name</name>
+          <scalar-type>string</scalar-type>
+          <val>Customer_Name</val>
+        </column>
+        <column>
+          <name>segment</name>
+          <scalar-type>string</scalar-type>
+          <val>Segment</val>
+        </column>
+        <column>
+          <name>postal_code</name>
+          <scalar-type>string</scalar-type>
+          <val>Postal_Code</val>
+          <nullable>true</nullable>
+        </column>
+        <column>
+          <name>city</name>
+          <scalar-type>string</scalar-type>
+          <val>City</val>
+        </column>
+        <column>
+          <name>state</name>
+          <scalar-type>string</scalar-type>
+          <val>State</val>
+        </column>
+        <column>
+          <name>country</name>
+          <scalar-type>string</scalar-type>
+          <val>Country</val>
+        </column>
+        <column>
+          <name>region</name>
+          <scalar-type>string</scalar-type>
+          <val>Region</val>
+        </column>
+        <column>
+          <name>market</name>
+          <scalar-type>string</scalar-type>
+          <val>Market</val>
+        </column>
+        <column>
+          <name>product_id</name>
+          <scalar-type>string</scalar-type>
+          <val>Product_ID</val>
+        </column>
+        <column>
+          <name>category</name>
+          <scalar-type>string</scalar-type>
+          <val>Category</val>
+        </column>
+        <column>
+          <name>sub_category</name>
+          <scalar-type>string</scalar-type>
+          <val>Sub-Category</val>
+        </column>
+        <column>
+          <name>product_name</name>
+          <scalar-type>string</scalar-type>
+          <val>Product_Name</val>
+        </column>
+        <column>
+          <name>sales</name>
+          <scalar-type>decimal</scalar-type>
+          <val>replace( substring-after(Sales, '$'), ',', '')</val>
+        </column>
+        <column>
+          <name>quantity</name>
+          <scalar-type>int</scalar-type>
+          <val>replace( Quantity, ',', '')</val>
+        </column>
+        <column>
+          <name>discount</name>
+          <scalar-type>decimal</scalar-type>
+          <val>Discount</val>
+        </column>
+        <column>
+          <name>profit</name>
+          <scalar-type>decimal</scalar-type>
+          <val>replace(replace(Profit, '\$', ''), ',', '')</val>
+        </column>
+        <column>
+          <name>shipping_cost</name>
+          <scalar-type>decimal</scalar-type>
+          <val>replace( Shipping_Cost, ',', '')</val>
+        </column>
+        <column>
+          <name>order_priority</name>
+          <scalar-type>string</scalar-type>
+          <val>Order_Priority</val>
+        </column>
+      </columns>
+    </row>
+  </rows>
+</template>

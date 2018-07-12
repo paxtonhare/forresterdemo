@@ -1,0 +1,15 @@
+{
+  "info" : {
+    "title" : "People",
+    "version" : "0.0.1"
+  },
+  "definitions" : {
+    "People" : {
+      "required" : [ ],
+      "elementRangeIndex" : [ ],
+      "rangeIndex" : [ ],
+      "wordLexicon" : [ ],
+      "properties" : { }
+    }
+  }
+}

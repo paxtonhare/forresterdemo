@@ -1,0 +1,4 @@
+.gradle
+/.tmp/*.properties
+gradle-local.properties
+entities.layout.json

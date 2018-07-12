@@ -1,0 +1,15 @@
+{
+  "info" : {
+    "title" : "Returns",
+    "version" : "0.0.1"
+  },
+  "definitions" : {
+    "Returns" : {
+      "required" : [ ],
+      "elementRangeIndex" : [ ],
+      "rangeIndex" : [ ],
+      "wordLexicon" : [ ],
+      "properties" : { }
+    }
+  }
+}
