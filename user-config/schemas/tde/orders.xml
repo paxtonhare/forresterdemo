@@ -13,11 +13,13 @@
            <name>row_id</name>
            <scalar-type>long</scalar-type>
            <val>Row_ID</val>
+           <nullable>true</nullable>
          </column>
          <column>
            <name>order_id</name>
            <scalar-type>string</scalar-type>
            <val>Order_ID</val>
+           <nullable>true</nullable>
         </column>
         <column>
           <name>order_date</name>
@@ -39,6 +41,7 @@
               )
             )
           </val>
+          <nullable>true</nullable>
         </column>
         <column>
           <name>ship_date</name>
@@ -60,27 +63,31 @@
                 )
               )
           </val>
+          <nullable>true</nullable>
         </column>
-
         <column>
           <name>ship_mode</name>
           <scalar-type>string</scalar-type>
           <val>Ship_Mode</val>
+          <nullable>true</nullable>
         </column>
         <column>
           <name>customer_id</name>
           <scalar-type>string</scalar-type>
           <val>Customer_ID</val>
+          <nullable>true</nullable>
         </column>
         <column>
           <name>customer_name</name>
           <scalar-type>string</scalar-type>
           <val>Customer_Name</val>
+          <nullable>true</nullable>
         </column>
         <column>
           <name>segment</name>
           <scalar-type>string</scalar-type>
           <val>Segment</val>
+          <nullable>true</nullable>
         </column>
         <column>
           <name>postal_code</name>
@@ -92,76 +99,91 @@
           <name>city</name>
           <scalar-type>string</scalar-type>
           <val>City</val>
+          <nullable>true</nullable>
         </column>
         <column>
           <name>state</name>
           <scalar-type>string</scalar-type>
           <val>State</val>
+          <nullable>true</nullable>
         </column>
         <column>
           <name>country</name>
           <scalar-type>string</scalar-type>
           <val>Country</val>
+          <nullable>true</nullable>
         </column>
         <column>
           <name>region</name>
           <scalar-type>string</scalar-type>
           <val>Region</val>
+          <nullable>true</nullable>
         </column>
         <column>
           <name>market</name>
           <scalar-type>string</scalar-type>
           <val>Market</val>
+          <nullable>true</nullable>
         </column>
         <column>
           <name>product_id</name>
           <scalar-type>string</scalar-type>
           <val>Product_ID</val>
+          <nullable>true</nullable>
         </column>
         <column>
           <name>category</name>
           <scalar-type>string</scalar-type>
           <val>Category</val>
+          <nullable>true</nullable>
         </column>
         <column>
           <name>sub_category</name>
           <scalar-type>string</scalar-type>
           <val>Sub-Category</val>
+          <nullable>true</nullable>
         </column>
         <column>
           <name>product_name</name>
           <scalar-type>string</scalar-type>
           <val>Product_Name</val>
+          <nullable>true</nullable>
         </column>
         <column>
           <name>sales</name>
           <scalar-type>decimal</scalar-type>
           <val>replace( substring-after(Sales, '$'), ',', '')</val>
+          <nullable>true</nullable>
         </column>
         <column>
           <name>quantity</name>
           <scalar-type>int</scalar-type>
           <val>replace( Quantity, ',', '')</val>
+          <nullable>true</nullable>
         </column>
         <column>
           <name>discount</name>
           <scalar-type>decimal</scalar-type>
           <val>Discount</val>
+          <nullable>true</nullable>
         </column>
         <column>
           <name>profit</name>
           <scalar-type>decimal</scalar-type>
           <val>replace(replace(Profit, '\$', ''), ',', '')</val>
+          <nullable>true</nullable>
         </column>
         <column>
           <name>shipping_cost</name>
           <scalar-type>decimal</scalar-type>
           <val>replace( Shipping_Cost, ',', '')</val>
+          <nullable>true</nullable>
         </column>
         <column>
           <name>order_priority</name>
           <scalar-type>string</scalar-type>
           <val>Order_Priority</val>
+          <nullable>true</nullable>
         </column>
       </columns>
     </row>
