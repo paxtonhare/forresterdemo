@@ -8,20 +8,23 @@
        <schema-name>forrester_demo</schema-name>
        <view-name>returns</view-name>
        <columns>
-             <column>
+          <column>
            <name>order_id</name>
            <scalar-type>string</scalar-type>
            <val>Order_ID</val>
+           <nullable>true</nullable>
          </column>
          <column>
            <name>returned</name>
            <scalar-type>string</scalar-type>
            <val>Returned</val>
+           <nullable>true</nullable>
         </column>
         <column>
           <name>region</name>
           <scalar-type>string</scalar-type>
           <val>Region</val>
+          <nullable>true</nullable>
         </column>
       </columns>
     </row>
