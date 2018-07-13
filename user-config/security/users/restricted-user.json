@@ -1,0 +1,6 @@
+{
+  "user-name": "%%mlRestrictedUserName%%",
+  "description": "A restricted user",
+  "password": "%%mlRestrictedUserPassword%%",
+  "role": ["%%mlRestrictedRole%%"]
+}

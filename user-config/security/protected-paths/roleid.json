@@ -1,0 +1,6 @@
+{
+  "path-expression": "/envelope/instance/Order_ID",
+  "permission": [
+    {"role-name":"data-hub-role", "capability":"read"}
+  ]
+}
