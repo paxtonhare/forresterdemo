@@ -33,11 +33,6 @@
       "kind": "execute"
     },
     {
-      "privilege-name": "xdbc:eval",
-      "action": "http://marklogic.com/xdmp/privileges/xdbc-eval",
-      "kind": "execute"
-    },
-    {
       "privilege-name": "xdmp:invoke",
       "action": "http://marklogic.com/xdmp/privileges/xdmp-invoke",
       "kind": "execute"

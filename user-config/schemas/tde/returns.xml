@@ -1,5 +1,5 @@
 <template xmlns="http://marklogic.com/xdmp/tde">
- <context>//instance</context>
+ <context>/*:envelope/*:instance/*:return</context>
    <collections>
      <collection>Returns</collection>
    </collections>

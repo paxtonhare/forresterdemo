@@ -1,0 +1,6 @@
+{
+  "path-expression": "/envelope/instance/CreditCardNum",
+  "permission": [
+    {"role-name":"data-hub-role", "capability":"read"}
+  ]
+}
