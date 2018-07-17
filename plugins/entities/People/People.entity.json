@@ -9,7 +9,24 @@
       "elementRangeIndex" : [ ],
       "rangeIndex" : [ ],
       "wordLexicon" : [ ],
-      "properties" : { }
+      "properties" : {
+        "ID" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "Person" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "Region" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        },
+        "CreditCardNum" : {
+          "datatype" : "string",
+          "collation" : "http://marklogic.com/collation/codepoint"
+        }
+      }
     }
   }
 }
